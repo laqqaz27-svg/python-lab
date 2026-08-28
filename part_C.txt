@@ -1,0 +1,62 @@
+PART C - WRITING AND COMMITTING PYTHON CODE
+
+1. utils.py
+
+def square(n):
+    return n ** 2
+
+def is_even(n):
+    return n % 2 == 0
+
+def celsius_to_fahrenheit(c):
+    return (c * 9 / 5) + 32
+
+
+2. main.py
+
+from utils import square, is_even, celsius_to_fahrenheit
+
+number = float(input("Enter a number: "))
+
+print("Square:", square(number))
+
+if is_even(number):
+    print("Even")
+else:
+    print("Odd")
+
+print("Fahrenheit:", celsius_to_fahrenheit(number))
+
+
+3. How Python import connects main.py to utils.py
+
+The main.py file uses the statement "from utils import square, is_even, celsius_to_fahrenheit" to import the three functions from utils.py.
+ Since both files are in the same src folder, Python can find the utils module. This allows main.py to use the functions defined in utils.py without rewriting their code.
+
+
+4. Testing
+
+Microsoft Windows [Version 10.0.19045.6456]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Student>cd C:\Users\Student\python_lab\src
+
+C:\Users\Student\python_lab\src>python main.py
+Enter a number: 7
+Square: 49.0
+Odd
+Fahrenheit: 44.6
+
+C:\Users\Student\python_lab\src>python main.py
+Enter a number: 9
+Square: 81.0
+Odd
+Fahrenheit: 48.2
+
+C:\Users\Student\python_lab\src>python main.py
+Enter a number: 11
+Square: 121.0
+Odd
+Fahrenheit: 51.8
+
+All three tests passed successfully.

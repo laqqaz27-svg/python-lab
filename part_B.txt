@@ -1,0 +1,17 @@
+PART B - GIT INITIALIZATION AND FIRST COMMIT
+
+What does .gitignore do?
+
+The .gitignore file tells Git which files and folders should not be tracked in the repository.
+ In this project, __pycache__/ ignores Python cache directories, *.pyc ignores compiled Python files, and .env ignores environment files that may contain private configuration or environment variables.
+
+
+ Why are the file patterns important?
+
+The __pycache__/ and *.pyc patterns are important because Python automatically creates cache and compiled files that are not necessary to share in a source-code repository.
+ The .env pattern is important because environment files can contain private information such as configuration values or credentials. Ignoring these files keeps the repository cleaner and safer.
+
+What does Git commit history show?
+
+Git commit history records the changes made to a project over time. It shows commit messages, the order of changes, and when changes were recorded.
+ This helps developers understand how the project developed and makes it easier to track previous work.

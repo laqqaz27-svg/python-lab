@@ -1,0 +1,15 @@
+PART A - PROJECT SETUP USING THE CLI
+
+Explanation of the commands
+
+The cd ~ command moves to my home directory. The mkdir python_lab command creates the project directory, and cd python_lab moves into it.
+ The mkdir src tests docs command creates three subdirectories for source code, tests, and documentation. The touch command creates the three empty Python files: main.py, utils.py, and config.py. 
+ The echo command together with > uses output redirection to write My Python Lab Project into docs/README.md.
+ The find . -print command displays the project directory and all its files and folders recursivel
+
+
+ Why separate the project into src, tests, and docs?
+
+Separating code into src, tests, and docs is good practice because each folder has a specific purpose.
+ The src folder contains the program code, the tests folder is used for testing, and the docs folder contains project documentation.
+  This organization makes a project easier to understand, maintain, test, and expand, even when the project is small.
